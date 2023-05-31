@@ -1,0 +1,49 @@
+.prize{
+	&__title{
+		margin-bottom : var(--margin-El) ;
+		
+		@media screen and (min-width: $tablet-max){
+			margin-bottom : var(--margin-Bl) ;
+		}
+	}
+	
+	&__list{
+		display: flex;
+		flex-direction: column;
+		gap: var(--margin-R) ;
+		
+		@media screen and (min-width: $tablet-max){
+			padding: 0 var(--margin-El) var(--margin-R) ;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	
+	&__item{
+		@media screen and (min-width: $tablet-max){
+			width: 280px;
+		}
+		@media screen and (min-width: $notebook){
+			width: 317px;
+		}
+		
+		&__picture{
+			margin-bottom : var(--margin-El);
+		}
+		
+		&__title{
+			width : 100%;
+			text-align: center;
+			
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 21px;
+			
+			@media screen and (min-width: $tablet-max){
+				font-size: 24px;
+				line-height: 24px;
+			}
+		}
+	}
+	
+}

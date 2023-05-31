@@ -1,0 +1,15 @@
+<div class="modal" id="contact">
+    <div class="modal__content" >
+        <button class="modal__btn_close js--modal" data-modal='contact'>
+             {#  <i class="icon icon--left ">{% include 'assets/img/close.svg' %}</i>#}
+        </button>
+        <h5 class="modal__h">Наши контакты</h5>
+        <div class="modal__link">
+            {{ contact('modal__link__contact') }}
+            <p class="modal__link__p_separator">или по телефону</p>
+            <a href="" class="btn modal__link__phone">+7 (495) 740-21-24</a>
+        </div>
+        <p class="modal__promo">Назови промокод <span>“2022”</span> и получи
+            скидку на первую съемку -  <span>30%</span></p>
+    </div>
+</div>

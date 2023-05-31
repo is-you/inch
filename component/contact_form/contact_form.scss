@@ -1,0 +1,94 @@
+.modal{
+	position: fixed;
+	top : 0;
+	left : 0;
+	
+	display: none;
+	align-items: center;
+	justify-content: center;
+	
+	width : 100vw;
+	height : 100vh;
+	
+	z-index: 10;
+	
+	&.active{
+		display: flex;
+	}
+	
+	&__link{
+		display: flex;
+		flex-direction: column;
+		gap: var(--margin-El) ;
+		
+		padding: var(--margin-L) 70px;
+		
+		border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+		border-top: 1px solid rgba(255, 255, 255, 0.13);
+		
+		&__contact{
+			--size-contact: 52px;
+			
+			& .icon{
+				width: 100%;
+				max-width: 26px;
+				max-height: 26px;
+			}
+			
+			& .icon-vk{
+				max-width: 31px;
+			}
+		}
+		
+		&__phone{
+			font-family: 'SF Pro Display', sans-serif;
+			font-size: 18px;
+			
+			color: #0A0C0C;
+			width: 100%;
+		}
+		
+		&__p_separator{
+			font-size: 17px;
+			line-height: 27px;
+		}
+	}
+	
+	&__promo{
+		margin: var(--margin-L) 0;
+		font-family: 'SF Pro Display', sans-serif;
+		font-size: 17px;
+		line-height: 27px;
+		padding: 0 60px;
+		
+		& span{
+			color: var(--color-Yellow) ;
+		}
+	}
+	
+	&__h{
+		font-size: 32px;
+		line-height: 90px;
+	}
+	
+	&__btn_close{
+		position: absolute;
+		top : 9px;
+		right : 9px;
+		width: 19px;
+		height: 19px;
+	}
+	
+	&__content{
+		position: relative;
+		width: 393px;
+		max-width: 95vw;
+		
+		text-align: center;
+		
+		background: rgba(0, 0, 0, 0.74);
+		border: 1px solid rgba(255, 255, 255, 0.13);
+		backdrop-filter: blur(10px);
+		border-radius: 6px;
+	}
+}

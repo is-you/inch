@@ -1,0 +1,17 @@
+.column20{
+	position: relative;
+	width: var(--width-Col) ;
+	@media screen and (max-width: $tablet){
+		width: 100%;
+	}
+}
+
+.column80{
+	position: relative;
+	width: calc(100% - var(--width-Col) );
+	@media screen and (max-width: $tablet){
+		width: 100%;
+		padding-left: 0;
+		margin-left : 0;
+	}
+}

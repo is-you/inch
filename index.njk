@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+{% from "component/head/head.njk" import head as head %}
+{% from "UI/button/button.njk" import button as button %}
+
+{{ head() }}
+
+<body>
+
+
+
+<div class="content">
+    {% include 'component/header/header.njk' %}
+    {% include 'particles/index/main/main.njk' %}
+    {% include 'particles/index/prize/prize.njk' %}
+    {% include 'particles/index/step/step.njk' %}
+    {% include 'particles/index/map/map.njk' %}
+    {% include 'component/footer/footer.njk' %}
+
+</div>
+
+</body>
+<script src="/js/App.js"></script>

@@ -1,0 +1,43 @@
+<header class="header">
+    <nav class="header__nav">
+        <a class="header__logo">
+            <i class="icon svg_ab">{% include 'assets/img/logo.svg' %}</i>
+        </a>
+
+        <ul class="header__page_nav">
+            <li class="header__page_nav__li">
+                <button class="header__page_nav__li__button">Prizes</button>
+            </li>
+            <li class="header__page_nav__li">
+                <button class="header__page_nav__li__button">Step to get prizes</button>
+            </li>
+            <li class="header__page_nav__li">
+                <button class="header__page_nav__li__button">Treasure map</button>
+            </li>
+            <li class="header__page_nav__li">
+                <a class="header__page_nav__li__a header__page_nav__li__button header__page_nav__li__button--arrow">
+                    <span>1inch Network</span>
+                    <i class="icon ">{% include 'assets/icon-lib/arrow.svg' %}</i>
+                </a>
+            </li>
+            <li class="header__page_nav__li">
+                <a class="header__page_nav__li__a header__page_nav__li__button header__page_nav__li__button--blue">
+                    <span>Launch dApp</span>
+                    <i class="icon ">{% include 'assets/icon-lib/shevron.svg' %}</i>
+                </a>
+            </li>
+        </ul>
+        <button class="header__burger mobile js--burger_toggle">
+            <i class="icon svg_ab header__burger__open">{% include 'assets/img/burger.svg' %}</i>
+            <i class="icon svg_ab header__burger__close">{% include 'assets/icon-lib/menu-close.svg' %}</i>
+        </button>
+        {#
+        <button class="video-btn header__btn_modal js--modal" data-modal='contact'>
+            <i class="icon icon--left button_img">{% include 'assets/icon-lib/camera.svg' %}</i>
+            <span class="">Оставить заявку</span>
+        </button>
+        <button class="header__btn-mobile header__btn-mobile--close js--header-menu">
+        </button>
+        #}
+    </nav>
+</header>
